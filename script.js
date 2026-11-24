@@ -11,12 +11,20 @@ function adaugareElement(){
     }
 
     const element = document.createElement("li");
-    element.textContent = text;
 
-    element.addEventListener("click", function() {
+    const paragraf = document.createElement("p");
+    paragraf.textContent = text;
+
+    const stergeButon = document.createElement("button");
+    stergeButon.textContent = "Sterge";
+
+    stergeButon.addEventListener("click", function() {
         element.remove();
     })
 
+    element.appendChild(paragraf);
+    element.appendChild(stergeButon);
+    
     lista.appendChild(element);
 
     valoareInput.value = "";
