@@ -16,7 +16,7 @@ function adaugareElement(){
     paragraf.textContent = text;
 
     const stergeButon = document.createElement("button");
-    stergeButon.textContent = "Sterge";
+    stergeButon.textContent = "Sterge-ma";
 
     stergeButon.addEventListener("click", function() {
         element.remove();
